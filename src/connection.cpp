@@ -26,7 +26,7 @@ void connectionWifi(){
     }
     else{
         Serial.println("*************************");
-        Serial.println("error de conexiòn");
+        Serial.println("No se pudo conectar");
         Serial.println("*************************");
     }
 }
