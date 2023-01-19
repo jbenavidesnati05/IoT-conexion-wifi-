@@ -8,6 +8,10 @@ byte  max_intentos = 10;
 void connectionWifi(){
     WiFi.begin(ssid,password);
     while (WiFi.status()!=WL_CONNECTED and cont < max_intentos ){
+        delay(500);
+        Serial.println("Esperando para conectar");
+        cont++;
+
     }
     Serial.print("");
     if (cont<max_intentos){
